@@ -378,7 +378,7 @@ NSLog(@"didSelectRowAtIndexPath %@", indexPath);
 	//NSLog(@"imageOrientation %@", picture.imageOrientation);
 	//NSLog(@"image %@", picture.imageOrientation);
 	
-	NSData* jpegImageData = UIImageJPEGRepresentation(picture, 1.0);
+	NSData* jpegImageData = UIImageJPEGRepresentation(picture, 0.9);
 	[self performSelectorOnMainThread:@selector(loadData2:) withObject:jpegImageData waitUntilDone:NO];
     [pool release];
 	

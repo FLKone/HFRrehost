@@ -469,6 +469,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: julien Alexandre";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: julien Alexandre";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HFRrehost_Prefix.pch;
@@ -476,7 +477,8 @@
 				HEADER_SEARCH_PATHS = "/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/usr/include/libxml2/**";
 				INFOPLIST_FILE = "HFRrehost-Info.plist";
 				PRODUCT_NAME = HFRrehost;
-				PROVISIONING_PROFILE = "25B83B4F-8DAA-4702-9860-86879BE87835";
+				PROVISIONING_PROFILE = "2CB71580-83E9-4B99-B92A-72E3C4287D7E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2CB71580-83E9-4B99-B92A-72E3C4287D7E";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

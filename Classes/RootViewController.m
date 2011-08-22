@@ -12,6 +12,8 @@
 
 #import "ImageCellView.h"
 #import "UIImageView+WebCache.h"
+#import "UIImage-Extensions.h"
+
 
 @interface RootViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -364,8 +366,10 @@ NSLog(@"didSelectRowAtIndexPath %@", indexPath);
 	
 	[self.progViewController.progIndicator setProgress:0];
 	self.tableView.tableHeaderView = self.progViewController.view;
-	self.navigationItem.rightBarButtonItem.enabled = NO;
-	self.navigationItem.leftBarButtonItem.enabled = NO;
+	
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+	
+    self.navigationItem.leftBarButtonItem.enabled = NO;
 	
 	[self performSelectorInBackground:@selector(loadData:) withObject:picture];
 }
@@ -375,11 +379,46 @@ NSLog(@"didSelectRowAtIndexPath %@", indexPath);
 	
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	
-	//NSLog(@"imageOrientation %@", picture.imageOrientation);
-	//NSLog(@"image %@", picture.imageOrientation);
-	
+	//UIImageOrientation    originalOrientation = picture.imageOrientation;
+    
+	//NSLog(@"image %f %f", picture.size.width, picture.size.height);
+    /*
+	switch (originalOrientation) {
+		case UIImageOrientationUp:      //EXIF 1
+			NSLog(@"EXIF 1 UIImageOrientationUp");
+			break;
+			
+		case UIImageOrientationDown:    //EXIF 3
+			NSLog(@"EXIF 3 UIImageOrientationDown");
+            picture = [picture imageRotatedByDegrees:180];
+            
+			break;
+			
+		case UIImageOrientationLeft:    //EXIF 6
+			NSLog(@"EXIF 6 UIImageOrientationLeft");
+            //picture = [picture imageRotatedByDegrees:-90];
+            break;
+			
+		case UIImageOrientationRight:   //EXIF 8
+			NSLog(@"EXIF 8 UIImageOrientationRight");
+            //picture = [picture imageRotatedByDegrees:90];
+			break;
+			
+		default:
+			NSLog(@"EXIF DEF");
+			
+			break;
+	}
+	*/
+    
+    picture = [picture scaleAndRotateImage:picture];
+    
+    //NSLog(@"image %f %f", picture.size.width, picture.size.height);
+    
 	NSData* jpegImageData = UIImageJPEGRepresentation(picture, 0.9);
-	[self performSelectorOnMainThread:@selector(loadData2:) withObject:jpegImageData waitUntilDone:NO];
+	
+    [self performSelectorOnMainThread:@selector(loadData2:) withObject:jpegImageData waitUntilDone:NO];
+    
     [pool release];
 	
 
@@ -497,7 +536,7 @@ NSLog(@"didSelectRowAtIndexPath %@", indexPath);
 	self.navigationItem.leftBarButtonItem.enabled = YES;
 
 	
-	NSLog(@"fetchContentFailed");
+	NSLog(@"fetchContentFailed %@", theRequest);
 	
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Ooops !" message:[[theRequest error] localizedDescription]
 												   delegate:self cancelButtonTitle:@"Tant pis..." otherButtonTitles:nil, nil];

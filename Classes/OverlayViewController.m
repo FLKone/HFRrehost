@@ -293,39 +293,8 @@ enum
     UIImage *image = [info valueForKey:UIImagePickerControllerOriginalImage];
 
 
-	NSLog(@"image %f %f", image.size.width, image.size.height);
+	//NSLog(@"image %f %f", image.size.width, image.size.height);
 
-	
-	UIImageOrientation    originalOrientation = image.imageOrientation;
-
-	switch (originalOrientation) {
-		case UIImageOrientationUp:      //EXIF 1
-			NSLog(@"EXIF 1");
-			break;
-			
-		case UIImageOrientationDown:    //EXIF 3
-			NSLog(@"EXIF 3");
-
-			break;
-			
-		case UIImageOrientationLeft:    //EXIF 6
-			NSLog(@"EXIF 6");
-
-			break;
-			
-		case UIImageOrientationRight:   //EXIF 8
-			NSLog(@"EXIF 8");
-
-			break;
-			
-		default:
-			NSLog(@"EXIF DEF");
-			
-			break;
-	}
- 	
-	
-	
     // give the taken picture to our delegate
     if (self.delegate)
         [self.delegate didTakePicture:image];

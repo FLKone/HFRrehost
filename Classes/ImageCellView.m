@@ -33,7 +33,7 @@
 
 -(IBAction)copyFull {
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Copier le BBCode" message:@"avec ou sans lien?"
-												   delegate:self cancelButtonTitle:@"Annuler" otherButtonTitles:@"Avec!", @"Sans!", nil];
+												   delegate:self cancelButtonTitle:@"Annuler" otherButtonTitles:@"Avec!", @"Sans!", @"Le lien uniquement!", nil];
 	
 	[alert setTag:111];
 	[alert show];
@@ -42,7 +42,7 @@
 
 -(IBAction)copyPreview {
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Copier le BBCode" message:@"avec ou sans lien?"
-												   delegate:self cancelButtonTitle:@"Annuler" otherButtonTitles:@"Avec!", @"Sans!", nil];
+												   delegate:self cancelButtonTitle:@"Annuler" otherButtonTitles:@"Avec!", @"Sans!", @"Le lien uniquement!", nil];
 	
 	[alert setTag:222];
 	[alert show];
@@ -53,7 +53,7 @@
 	//NSLog(@"indexPath %@", self.indexPath);
 
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Copier le BBCode" message:@"avec ou sans lien?"
-												   delegate:self cancelButtonTitle:@"Annuler" otherButtonTitles:@"Avec!", @"Sans!", nil];
+												   delegate:self cancelButtonTitle:@"Annuler" otherButtonTitles:@"Avec!", @"Sans!", @"Le lien uniquement!", nil];
 	
 	[alert setTag:333];
 	[alert show];
@@ -116,7 +116,25 @@
 				default:
 					break;
 			}
-			break;			
+			break;
+        case 3:
+        {
+            
+			switch (alertView.tag) {
+				case 111:
+					pasteboard.string = [[[[managedObject valueForKey:@"nolink_full"] description] stringByReplacingOccurrencesOfString:@"[img]" withString:@""] stringByReplacingOccurrencesOfString:@"[/img]" withString:@""];
+					break;
+				case 222:
+					pasteboard.string = [[[[managedObject valueForKey:@"nolink_preview"] description] stringByReplacingOccurrencesOfString:@"[img]" withString:@""] stringByReplacingOccurrencesOfString:@"[/img]" withString:@""];
+					break;
+				case 333:
+					pasteboard.string = [[[[managedObject valueForKey:@"nolink_miniature"] description] stringByReplacingOccurrencesOfString:@"[img]" withString:@""] stringByReplacingOccurrencesOfString:@"[/img]" withString:@""];
+					break;					
+				default:
+					break;
+			}
+			break;
+        }
 		default:
 			break;
 	}

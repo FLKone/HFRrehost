@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01A58B7C13FDBF1200005200 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A58B7B13FDBF1200005200 /* libz.dylib */; };
+		01BDEF8713FE1B6E00909A14 /* UIImage-Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BDEF8613FE1B6E00909A14 /* UIImage-Extensions.m */; };
 		1D3623260D0F684500981E51 /* HFRrehostAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* HFRrehostAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -33,7 +35,6 @@
 		CAADDF121268B29A00E19F00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAADDF111268B29A00E19F00 /* CFNetwork.framework */; };
 		CAADDF161268B2B100E19F00 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAADDF151268B2B100E19F00 /* MobileCoreServices.framework */; };
 		CAADDF181268B2B100E19F00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAADDF171268B2B100E19F00 /* SystemConfiguration.framework */; };
-		CAADDF1A1268B2B100E19F00 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAADDF191268B2B100E19F00 /* libz.1.2.3.dylib */; };
 		CAADDFC71268DCD400E19F00 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADDFC51268DCD400E19F00 /* ProgressView.m */; };
 		CAADDFC81268DCD400E19F00 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAADDFC61268DCD400E19F00 /* ProgressView.xib */; };
 		CAADE0971268EE6F00E19F00 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADE0941268EE6F00E19F00 /* HTMLNode.m */; };
@@ -52,6 +53,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A58B7B13FDBF1200005200 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		01BDEF8513FE1B6E00909A14 /* UIImage-Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage-Extensions.h"; sourceTree = "<group>"; };
+		01BDEF8613FE1B6E00909A14 /* UIImage-Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage-Extensions.m"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* HFRrehostAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRrehostAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* HFRrehostAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRrehostAppDelegate.m; sourceTree = "<group>"; };
@@ -95,7 +99,6 @@
 		CAADDF111268B29A00E19F00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CAADDF151268B2B100E19F00 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		CAADDF171268B2B100E19F00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		CAADDF191268B2B100E19F00 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
 		CAADDFC41268DCD400E19F00 /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
 		CAADDFC51268DCD400E19F00 /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 		CAADDFC61268DCD400E19F00 /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProgressView.xib; path = ../ProgressView.xib; sourceTree = "<group>"; };
@@ -129,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A58B7C13FDBF1200005200 /* libz.dylib in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
@@ -136,7 +140,6 @@
 				CAADDF121268B29A00E19F00 /* CFNetwork.framework in Frameworks */,
 				CAADDF161268B2B100E19F00 /* MobileCoreServices.framework in Frameworks */,
 				CAADDF181268B2B100E19F00 /* SystemConfiguration.framework in Frameworks */,
-				CAADDF1A1268B2B100E19F00 /* libz.1.2.3.dylib in Frameworks */,
 				CAADE0EE1268EEBA00E19F00 /* libxml2.2.7.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +160,8 @@
 				CAADDFC51268DCD400E19F00 /* ProgressView.m */,
 				CA1840191268A9E300759ED7 /* OverlayViewController.h */,
 				CA18401A1268A9E300759ED7 /* OverlayViewController.m */,
+				01BDEF8513FE1B6E00909A14 /* UIImage-Extensions.h */,
+				01BDEF8613FE1B6E00909A14 /* UIImage-Extensions.m */,
 				CAADDFC61268DCD400E19F00 /* ProgressView.xib */,
 				2899E55F0DE3E45000AC0155 /* RootViewController.xib */,
 				CA89BAC312EBE3B900F87328 /* ImageViewCell OK.xib */,
@@ -218,10 +223,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01A58B7B13FDBF1200005200 /* libz.dylib */,
 				CAADDF111268B29A00E19F00 /* CFNetwork.framework */,
 				CAADDF151268B2B100E19F00 /* MobileCoreServices.framework */,
 				CAADDF171268B2B100E19F00 /* SystemConfiguration.framework */,
-				CAADDF191268B2B100E19F00 /* libz.1.2.3.dylib */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
@@ -311,7 +316,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0420;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HFRrehost" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -381,6 +386,7 @@
 				CAADE2341269098600E19F00 /* SDWebImageDownloader.m in Sources */,
 				CAADE2351269098600E19F00 /* SDWebImageManager.m in Sources */,
 				CAADE2361269098600E19F00 /* UIImageView+WebCache.m in Sources */,
+				01BDEF8713FE1B6E00909A14 /* UIImage-Extensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

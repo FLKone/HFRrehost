@@ -39,7 +39,6 @@
 		CAADDFC81268DCD400E19F00 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAADDFC61268DCD400E19F00 /* ProgressView.xib */; };
 		CAADE0971268EE6F00E19F00 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADE0941268EE6F00E19F00 /* HTMLNode.m */; };
 		CAADE0981268EE6F00E19F00 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADE0961268EE6F00E19F00 /* HTMLParser.m */; };
-		CAADE0EE1268EEBA00E19F00 /* libxml2.2.7.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAADE0ED1268EEBA00E19F00 /* libxml2.2.7.3.dylib */; };
 		CAADE1BB1268FC7E00E19F00 /* ImageCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADE1BA1268FC7E00E19F00 /* ImageCellView.m */; };
 		CAADE1BD1268FC8C00E19F00 /* ImageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAADE1BC1268FC8C00E19F00 /* ImageViewCell.xib */; };
 		CAADE2331269098600E19F00 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CAADE2291269098600E19F00 /* SDImageCache.m */; };
@@ -50,6 +49,7 @@
 		CAADE27512690FE000E19F00 /* image30.png in Resources */ = {isa = PBXBuildFile; fileRef = CAADE27412690FE000E19F00 /* image30.png */; };
 		CAADE2BE1269150400E19F00 /* DarkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CAADE2BC1269150400E19F00 /* DarkBackground.png */; };
 		CAADE2BF1269150400E19F00 /* LightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CAADE2BD1269150400E19F00 /* LightBackground.png */; };
+		CADC2E8617E6A01C00365CC8 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CADC2E8517E6A01C00365CC8 /* libxml2.2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +107,6 @@
 		CAADE0941268EE6F00E19F00 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
 		CAADE0951268EE6F00E19F00 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
 		CAADE0961268EE6F00E19F00 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
-		CAADE0ED1268EEBA00E19F00 /* libxml2.2.7.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.7.3.dylib; path = usr/lib/libxml2.2.7.3.dylib; sourceTree = SDKROOT; };
 		CAADE1B91268FC7E00E19F00 /* ImageCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCellView.h; sourceTree = "<group>"; };
 		CAADE1BA1268FC7E00E19F00 /* ImageCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCellView.m; sourceTree = "<group>"; };
 		CAADE1BC1268FC8C00E19F00 /* ImageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewCell.xib; sourceTree = "<group>"; };
@@ -126,6 +125,7 @@
 		CAADE27412690FE000E19F00 /* image30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image30.png; sourceTree = "<group>"; };
 		CAADE2BC1269150400E19F00 /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
 		CAADE2BD1269150400E19F00 /* LightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBackground.png; sourceTree = "<group>"; };
+		CADC2E8517E6A01C00365CC8 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CADC2E8617E6A01C00365CC8 /* libxml2.2.dylib in Frameworks */,
 				01A58B7C13FDBF1200005200 /* libz.dylib in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -141,7 +142,6 @@
 				CAADDF121268B29A00E19F00 /* CFNetwork.framework in Frameworks */,
 				CAADDF161268B2B100E19F00 /* MobileCoreServices.framework in Frameworks */,
 				CAADDF181268B2B100E19F00 /* SystemConfiguration.framework in Frameworks */,
-				CAADE0EE1268EEBA00E19F00 /* libxml2.2.7.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +225,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CADC2E8517E6A01C00365CC8 /* libxml2.2.dylib */,
 				01A58B7B13FDBF1200005200 /* libz.dylib */,
 				CAADDF111268B29A00E19F00 /* CFNetwork.framework */,
 				CAADDF151268B2B100E19F00 /* MobileCoreServices.framework */,
@@ -233,7 +234,6 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 				28860BE40F44EE6400985440 /* CoreData.framework */,
-				CAADE0ED1268EEBA00E19F00 /* libxml2.2.7.3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

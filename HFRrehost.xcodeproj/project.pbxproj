@@ -50,6 +50,9 @@
 		CAADE2BE1269150400E19F00 /* DarkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CAADE2BC1269150400E19F00 /* DarkBackground.png */; };
 		CAADE2BF1269150400E19F00 /* LightBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CAADE2BD1269150400E19F00 /* LightBackground.png */; };
 		CADC2E8617E6A01C00365CC8 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CADC2E8517E6A01C00365CC8 /* libxml2.2.dylib */; };
+		CADC2E8817E6A12A00365CC8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CADC2E8717E6A12A00365CC8 /* Default-568h@2x.png */; };
+		CADC2E8A17E6A13000365CC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CADC2E8917E6A13000365CC8 /* Images.xcassets */; };
+		CADC2E8D17E6A18300365CC8 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CADC2E8C17E6A18300365CC8 /* MainWindow-iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +129,9 @@
 		CAADE2BC1269150400E19F00 /* DarkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBackground.png; sourceTree = "<group>"; };
 		CAADE2BD1269150400E19F00 /* LightBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightBackground.png; sourceTree = "<group>"; };
 		CADC2E8517E6A01C00365CC8 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		CADC2E8717E6A12A00365CC8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CADC2E8917E6A13000365CC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HFRrehost/Images.xcassets; sourceTree = "<group>"; };
+		CADC2E8C17E6A18300365CC8 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,10 +188,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				CADC2E8717E6A12A00365CC8 /* Default-568h@2x.png */,
 				CA00466915A647A0009C09D5 /* HFRrehost.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				CADC2E8B17E6A18300365CC8 /* iPad */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -207,6 +215,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CADC2E8917E6A13000365CC8 /* Images.xcassets */,
 				CA91DFFE13AE5C6A00B8C2CB /* Entitlements.plist */,
 				CA5FCF63126DDAF00079AB84 /* icon-i4.png */,
 				CA5FCF64126DDAF00079AB84 /* icon-ipad.png */,
@@ -292,6 +301,14 @@
 			name = SDImage;
 			sourceTree = "<group>";
 		};
+		CADC2E8B17E6A18300365CC8 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				CADC2E8C17E6A18300365CC8 /* MainWindow-iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,11 +367,14 @@
 				CAADDFC81268DCD400E19F00 /* ProgressView.xib in Resources */,
 				CAADE1BD1268FC8C00E19F00 /* ImageViewCell.xib in Resources */,
 				CAADE26912690DE400E19F00 /* photoDefault.png in Resources */,
+				CADC2E8817E6A12A00365CC8 /* Default-568h@2x.png in Resources */,
+				CADC2E8A17E6A13000365CC8 /* Images.xcassets in Resources */,
 				CAADE27512690FE000E19F00 /* image30.png in Resources */,
 				CAADE2BE1269150400E19F00 /* DarkBackground.png in Resources */,
 				CAADE2BF1269150400E19F00 /* LightBackground.png in Resources */,
 				CA5FCF66126DDAF00079AB84 /* icon-i4.png in Resources */,
 				CA5FCF67126DDAF00079AB84 /* icon-ipad.png in Resources */,
+				CADC2E8D17E6A18300365CC8 /* MainWindow-iPad.xib in Resources */,
 				CA5FCF68126DDAF00079AB84 /* icon.png in Resources */,
 				CA89BAC412EBE3B900F87328 /* ImageViewCell OK.xib in Resources */,
 				CA91DFFF13AE5C6A00B8C2CB /* Entitlements.plist in Resources */,
@@ -399,6 +419,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = HFRrehost.entitlements;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -408,9 +430,10 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "HFRrehost-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = HFRrehost;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -418,6 +441,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = HFRrehost.entitlements;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -425,8 +450,10 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "HFRrehost-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = HFRrehost;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -485,6 +512,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = HFRrehost.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: julien Alexandre";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: julien Alexandre";
@@ -494,10 +523,12 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "HFRrehost-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = HFRrehost;
 				PROVISIONING_PROFILE = "2CB71580-83E9-4B99-B92A-72E3C4287D7E";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2CB71580-83E9-4B99-B92A-72E3C4287D7E";
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Distribution AppStore";

@@ -14,5 +14,5 @@
 - (UIImage *)imageRotatedByRadians:(CGFloat)radians;
 - (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
 - (UIImage *)scaleAndRotateImage:(UIImage *)image;
-
++ (UIImage *)imageWithColor:(UIColor *)color;
 @end;

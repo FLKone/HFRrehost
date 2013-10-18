@@ -8,20 +8,25 @@
 
 #import "HFRrehostAppDelegate.h"
 #import "RootViewController.h"
-
+#import "RehostRootViewController.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation HFRrehostAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
+@synthesize rehostRootController;
 
 
 #pragma mark -
 #pragma mark Application lifecycle
 
+
+
 - (void)awakeFromNib {    
     
     RootViewController *rootViewController = (RootViewController *)[navigationController topViewController];
+    rehostRootController.managedObjectContext = self.managedObjectContext;
     rootViewController.managedObjectContext = self.managedObjectContext;
 }
 
@@ -31,7 +36,11 @@
     // Override point for customization after application launch.
 
     // Add the navigation controller's view to the window and display.
-    [self.window addSubview:navigationController.view];
+//    [self.window setRootViewController:navigationController];
+    
+    //[[SDImageCache sharedImageCache] clearDisk];
+    
+    [self.window setRootViewController:rehostRootController];
     [self.window makeKeyAndVisible];
 
     return YES;
@@ -207,6 +216,7 @@
     [persistentStoreCoordinator_ release];
     
     [navigationController release];
+    [rehostRootController release];
     [window release];
     [super dealloc];
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="784" identifier="iOS"/>
+        <deployment defaultVersion="1280" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <objects>
@@ -14,6 +14,7 @@
         <customObject id="3" customClass="HFRrehostAppDelegate">
             <connections>
                 <outlet property="navigationController" destination="9" id="15"/>
+                <outlet property="rehostRootController" destination="5MV-qo-AgT" id="R97-AD-Mhs"/>
                 <outlet property="window" destination="2" id="5"/>
             </connections>
         </customObject>
@@ -47,5 +48,12 @@
                 </viewController>
             </viewControllers>
         </navigationController>
+        <viewController id="5MV-qo-AgT" customClass="RehostRootViewController">
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </viewController>
     </objects>
 </document>

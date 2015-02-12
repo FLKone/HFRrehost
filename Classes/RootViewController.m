@@ -54,7 +54,7 @@
 	[self.tableView setTableFooterView:v];
 	[v release];
 	
-	self.title = @"HFRrehost";
+	self.title = @"HFRrehost (reho.st)";
 	
 	//self.tableView.tableHeaderView = self.progViewController.view;
 }

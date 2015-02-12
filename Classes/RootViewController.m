@@ -482,9 +482,9 @@ NSLog(@"didSelectRowAtIndexPath %@", indexPath);
 	HTMLNode * bodyNode = [myParser body]; //Find the body tag
 
 	NSArray *codeArray = [bodyNode findChildTags:@"code"];
-	NSLog(@"codeArray %d", codeArray.count);
+	//NSLog(@"codeArray %d", codeArray.count);
 	
-	if (codeArray.count == 6) {
+	if (codeArray.count == 8) {
 		// OK :D
 		
 		// Create a new instance of the entity managed by the fetched results controller.

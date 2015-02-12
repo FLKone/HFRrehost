@@ -35,13 +35,17 @@
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIStatusBarHidden</key>
-	<true/>
+	<false/>
 	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleBlackOpaque</string>
-	<key>UTExportedTypeDeclarations</key>
-	<array/>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UTExportedTypeDeclarations</key>
+	<array/>
 	<key>UTImportedTypeDeclarations</key>
 	<array/>
 </dict>

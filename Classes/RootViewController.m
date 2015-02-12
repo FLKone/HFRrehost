@@ -429,8 +429,8 @@ NSLog(@"didSelectRowAtIndexPath %@", indexPath);
 
 	
 	ASIFormDataRequest* request = [ASIFormDataRequest requestWithURL: 
-								[NSURL URLWithString:@"http://hfr-rehost.net/upload"]]; 
-								//   [NSURL URLWithString:@"http://folkn.celeonet.fr/hfrplus/rehost/uploader/upload.processor.php"]]; 
+                                   [NSURL URLWithString:@"http://reho.st/upload"]];
+								//   [NSURL URLWithString:@"http://folkn.celeonet.fr/hfrplus/rehost/uploader/upload.processor.php"]];
 	
 
 	
@@ -496,11 +496,11 @@ NSLog(@"didSelectRowAtIndexPath %@", indexPath);
 		[newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
 		[newManagedObject setValue:[[codeArray objectAtIndex:0] allContents] forKey:@"link_full"];
 		[newManagedObject setValue:[[codeArray objectAtIndex:1] allContents] forKey:@"link_preview"];
-		[newManagedObject setValue:[[codeArray objectAtIndex:2] allContents] forKey:@"link_miniature"];
+		[newManagedObject setValue:[[codeArray objectAtIndex:3] allContents] forKey:@"link_miniature"];
 		
-		[newManagedObject setValue:[[codeArray objectAtIndex:3] allContents] forKey:@"nolink_full"];
-		[newManagedObject setValue:[[codeArray objectAtIndex:4] allContents] forKey:@"nolink_preview"];
-		[newManagedObject setValue:[[codeArray objectAtIndex:5] allContents] forKey:@"nolink_miniature"];		
+		[newManagedObject setValue:[[codeArray objectAtIndex:4] allContents] forKey:@"nolink_full"];
+		[newManagedObject setValue:[[codeArray objectAtIndex:5] allContents] forKey:@"nolink_preview"];
+		[newManagedObject setValue:[[codeArray objectAtIndex:7] allContents] forKey:@"nolink_miniature"];
 		
 		// Save the context.
 		NSError *error = nil;
